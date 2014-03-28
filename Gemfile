@@ -11,6 +11,8 @@ group :production do
   gem 'pg'
 end
 
+gem 'sorcery'
+
 gem 'sprockets_better_errors'
 
 # Use SCSS for stylesheets

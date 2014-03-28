@@ -1,5 +1,7 @@
 DW3::Application.routes.draw do
   
+  resources :users
+
   resources :dworlds
 
   get "dworld/home"
