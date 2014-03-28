@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DharmaWorld</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  
+  <!--nivo slider script-->
+  
+   <script type="text/javascript" src="/assets/jquery-2.0.2.js"></script>
+   <script type="text/javascript" src="/assets/jquery.nivo.slider.js"></script>
+  
+  <!--slider script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="javascripts/slides.min.jquery.js"></script>
+
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true
+			});
+		});
+	</script>
+<!-->	
+	
+</head>
+<body>
+
+<!--start container-->
+    <div id="container">
+
+    <!--start header-->
+
+    <header>
+ 
+    <!--start logo-->
+    <a href="#" id="logo"><%= image_tag 'dwlogo1b.png' %></a>    
+
+	<!--end logo-->
+	
+   <!--start menu-->
+
+	<nav>
+    <ul>
+    <li><a href="/dworld/home">Home</a></li>
+    <li><a href="/dworld/about">About</a></li>
+		<li><a href="/dworld/portfolio">Members</a></li>
+    <li><a href="/dworld/news">News </a></li>
+    <li><a href="/dworlds/new">Contact</a></li>
+
+    </ul>
+    </nav>
+	<!--end menu-->
+	
+	<!--start nivo slider image-->
+    <div id="wrapper">
+        <a href="http://www.google.com" id="google" title="Go to google search">Temple Under Construction Photos</a>
+        <div id="slider-wrapper">
+            <div id="slider">
+                <img src="/assets/T5buddhism.jpg" title="T5">
+                <a href="http://www.google.com"><img src="/assets/T1blossom.jpg" title="Blossoming" ></a>
+                <img src="/assets/T3reflections.jpg" title="T3">
+                <img src="/assets/T4night.jpg" title="#htmlcaption" />
+                <img src="/assets/T2chongsheng.jpg" title="T2">
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>
+     </div>
+
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    <!--end nivo slider-->
+   
+    <!--end header-->
+	</header>
+
+   <!--start intro 
+
+   <section id="intro">
+   <div id="slides">
+   <div class="slides_container">
+   <img src="/assets/banner1.png" width="960" height="300" alt="baner">
+   <img src="/assets/banner2.png" width="960" height="300" alt="baner">
+   <img src="/assets/banner1.png" width="960" height="300" alt="baner">
+   
+   </div>
+   </div>
+ 
+   </section>
+   <!--end intro-->
+   
+   
+   <!--start holder-->
+   <div class="holder_content1">
+   
+   <section class="group4">
+   <h1>Latest news 最新消息</h1>
+   <%= image_tag 'icon3.png'%>
+
+   <article>
+   <h2>1.08.2014  -  Recent Event</h2>
+
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.   </p>
+
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero. 
+   
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero. 
+   </p>
+   </article> 
+   
+
+
+   <section class="group1">
+   <h1>Event 典礼 </h1>
+   <%= image_tag 'icon4.png'%>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+   <a href=""><span class="button">Read more</span></a>
+   </section>
+
+   
+   <section class="group2">
+   <h1>Learning 慈心寺学院 </h1>
+   <%= image_tag 'icon2.png'%>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+   <a href=""><span class="button">Read more</span></a>
+   </section>
+   
+   <section class="group3">
+   <h1>Contributes 募集  及 捐赠</h1>
+   <%= image_tag 'icon1.png'%>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.   </p>
+   <a href=""><span class="button">Read more</span></a>
+    
+   </section>
+
+ 
+   </div>
+   <!--end holder-->
+   
+   
+   </div>
+   <!--end container-->
+   
+   <!--start footer-->
+   <footer>
+   <div class="container">
+   <section class="footer_left">
+   <h3>Contact information:
+   <span>Dharma World Temple USA</span>
+   <span>145-03 Bayside Avenue,</span>
+   <span>Flushing, New York 11354</span>
+   </h3>
+   </section> 
+   
+   <section class="footer_left">
+   <h3>Website:
+   <span>www.dharmaworldus.org</span>
+   <span></span>
+   </h3>
+   </section> 
+
+   
+   <aside class="footer_left">
+   <h3>
+   <span></span>
+   <span></span>
+   </h3>
+   </aside> 
+   <<%= image_tag 'm2a.png', size: '160x140'%>
+
+    
+   <div id="FooterTwo"> © Dharma World Temple USA </div>
+   <div id="FooterTree"> Valid html5 / design and code by <a href="http://www.marijazaric.com">[LIU] Hak.Aython</a> </div> 
+   </div>
+   </footer>
+   <!--end footer-->
+ <!-- Free template distributed by http://freehtml5templates.com -->  
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <%= stylesheet_link_tag    "members", media: "all" %>
+  <%= javascript_include_tag "application" %> 
+  <%= csrf_meta_tags %>
+  
+  <!--nivo slider script-->
+  
+   <script type="text/javascript" src="/assets/jquery-2.0.2.js"></script>
+   <script type="text/javascript" src="/assets/jquery.nivo.slider.js"></script>
+  
+</head>
+<body>
+
+<!--start container-->
+    <div id="container">
+
+    <!--start header-->
+
+    <header>
+ 
+    <!--start logo-->
+    <a href="#" id="logo"><%= image_tag 'dwlogo1b.png' %></a>    
+
+	<!--end logo-->
+	
+   <!--start menu-->
+
+	<nav>
+    <ul>
+    <li><a href="/dworld/home">Home</a></li>
+    <li><a href="/dworld/about">About</a></li>
+		<li><a href="/dworld/portfolio">Members</a></li>
+    <li><a href="/dworld/news">News </a></li>
+    <li><a href="/dworlds/new">Contact</a></li>
+
+    </ul>
+    </nav>
+	<!--end menu-->
+	
+
+   
+   <!--start holder-->
+
+   <div class="holder_content">
+   <h4>Dharma World Temple Masters 慈心寺大师</h4>
+   <section class="group1">
+   <h1>Master 大师</h1>
+   <%= image_tag 'icon1.png'%>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+   <a href=""><span class="button">Read more</span></a>
+   </section>
+
+   
+   <section class="group2">
+   <h1>Master 大师 </h1>
+   <%= image_tag 'icon1.png'%>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+   <a href=""><span class="button">Read more</span></a>
+   </section>
+   
+   <section class="group3">
+   <h1>Master 大师</h1>
+   <%= image_tag 'icon1.png'%>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.   </p>
+   <a href=""><span class="button">Read more</span></a>
+    
+   </section>
+   
+      <section class="group1">
+   <h1>Master 大师</h1>
+   <%= image_tag 'icon1.png'%>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+   <a href=""><span class="button">Read more</span></a>
+   </section>
+
+   
+   <section class="group2">
+   <h1>Master 大师 </h1>
+   <%= image_tag 'icon1.png'%>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+   <a href=""><span class="button">Read more</span></a>
+   </section>
+   
+   <section class="group3">
+   <h1>Master 大师</h1>
+   <%= image_tag 'icon1.png'%>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.   </p>
+   <a href=""><span class="button">Read more</span></a>
+    
+   </section>
+   
+   
+
+ 
+   </div>
+   <!--end holder-->
+   
+    <!--end header-->
+	</header>
+
+  
+   
+   </div>
+   <!--end container-->
+   
+   <!--start footer-->
+   <footer>
+   <div class="container">
+   <section class="footer_left">
+   <h3>Contact information:
+   <span>Dharma World Temple USA</span>
+   <span>145-03 Bayside Avenue,</span>
+   <span>Flushing, New York 11354</span>
+   </h3>
+   </section> 
+   
+   <section class="footer_left">
+   <h3>Website:
+   <span>www.dharmaworldus.org</span>
+   <span></span>
+   </h3>
+   </section> 
+
+   
+   <aside class="footer_left">
+   <h3>
+   <span></span>
+   <span></span>
+   </h3>
+   </aside> 
+   <<%= image_tag 'm2a.png', size: '160x140'%>
+
+    
+   <div id="FooterTwo"> © Dharma World Temple USA </div>
+   <div id="FooterTree"> Valid html5 / design and code by <a href="http://www.marijazaric.com">[KL] Hak.Aython</a> </div> 
+   </div>
+   </footer>
+   <!--end footer-->
+ <!-- Free template distributed by http://freehtml5templates.com -->  
+
+<%= yield %>
+
+</body>
+</html>

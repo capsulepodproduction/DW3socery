@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dworld.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @dworld.email %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @dworld.question %>
+</p>
+
+<p>
+  <strong>Datesend:</strong>
+  <%= @dworld.datesend %>
+</p>
+
+<%#= link_to 'Edit', edit_dworld_path(@dworld) %> |
+<%= link_to 'Return Home', dworld_home_path %>

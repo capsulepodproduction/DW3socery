@@ -1,0 +1,33 @@
+<h1>Listing dworlds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Question</th>
+      <th>Datesend</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dworlds.each do |dworld| %>
+      <tr>
+        <td><%= dworld.name %></td>
+        <td><%= dworld.email %></td>
+        <td><%= dworld.question %></td>
+        <td><%= dworld.datesend %></td>
+        <td><%= link_to 'Show', dworld %></td>
+        <td><%= link_to 'Edit', edit_dworld_path(dworld) %></td>
+        <td><%= button_to 'Destroy', dworld, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Back to Contact Page', new_dworld_path %>

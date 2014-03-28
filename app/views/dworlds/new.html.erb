@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DharmaWorld</title>
+  <%= stylesheet_link_tag    "contact", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!--start container-->
+    <div id="container">
+
+    <!--start header-->
+
+    <header>
+ 
+    <!--start logo-->
+    <a href="#" id="logo"><%= image_tag 'dwlogo1b.png'%></a>    
+
+	<!--end logo-->
+	
+    <!--end header-->
+
+	</header>
+
+
+
+<% content_for :title do %>
+	<% end %>
+
+<%= form_tag do %>
+	<table>
+		<TR>
+			<TD><h1></h1></TD>
+		</TR>	<br/>
+		
+				<TR>
+			<TD><h2></h2></TD>
+		</TR><br/>	
+		<TR>
+			<TD><h3>Contact Us with Questions Below
+			</h3></TD>
+			<TD><h3></h3></TD>
+		</TR>
+		<br/>
+	
+
+	
+		</table>
+		<br/>	
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.8072723146244!2d-73.8223539243753!3d40.770501830958054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f71fa637513012b!2sDharma+World!5e0!3m2!1sen!2sus!4v1395253333130" width="600" height="450" frameborder="0" style="border:0"></iframe>
+		
+<!--start menu-->
+
+	<nav>
+    <ul>
+    <li><a href="/dworld/home">Home</a></li>
+    <li><a href="/dworld/about">About</a></li>
+		<li><a href="/dworld/portfolio">Members</a></li>
+    <li><a href="/dworld/news">News</a></li>
+    <li><a href="/dworld/contact">Contact</a></li>
+
+    </ul>
+    </nav>
+<!--end menu-->
+
+	
+<% end %>
+	
+<%= render 'form' %>
+
+   </div>
+   <!--end container-->
+
+<!--start footer-->
+   <footer>
+   <div class="container">
+   <section class="footer_left">
+   <h3>Contact information:
+   <span>Dharma World Temple USA</span>
+   <span>145-03 Bayside Avenue,</span>
+   <span>Flushing, New York 11354</span>
+   </h3>
+   </section> 
+   
+   <section class="footer_left">
+   <h3>Website:
+   <span>www.dharmaworldus.org</span>
+   <span></span>
+   </h3>
+   </section> 
+
+   
+   <aside class="footer_left">
+   <h3>
+   <span></span>
+   <span></span>
+   </h3>
+   </aside> 
+   <<%= image_tag 'm2a.png', size: '160x140'%>
+
+    
+   <div id="FooterTwo"> © Dharma World Temple USA </div>
+   <div id="FooterTree"> Valid html5 / design and code by <a href="http://www.marijazaric.com">[KL] Hak.Aython</a> </div> 
+          <li><a href="/dworlds">.</a></li>  
+   </div>
+   </footer>
+   <!--end footer-->
+
+				<%#= link_to 'Back', dworlds_path %>
+
