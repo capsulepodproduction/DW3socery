@@ -28,27 +28,4 @@
 
 <br>
 
-
-
-<%= link_to 'New User', new_user_path %><br>
-<br>
-<li><a href="/dworlds">To DataBase page (dworlds/new.html) </a></li>  
-<br>
-<li><a href="/dworld/portfolio">Back To member to Logout.html </a></li> 
-<br>
-	<!--login menu -->
-  <div id="nav">
-    <% if current_user %>
-      <%= link_to "Edit Profile", edit_user_path(current_user.id) %>
-      <br><br>
-      <%#= link_to "Logout", :logout, method: :post %>
-    <% else %>
-      <%#= link_to "Register", new_user_path %> |
-      <%= link_to ".", :login %>
-    <% end %>
-  </div>
-  <div>
-    <p id="notice"><%= flash[:notice] %></p>
-    <p id="alert"><%= flash[:alert] %></p>
-  </div>
-  <!--end login menu -->
+<%= link_to 'New User', new_user_path %>
