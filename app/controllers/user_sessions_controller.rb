@@ -14,6 +14,6 @@ class UserSessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to(:users, notice: 'Logged out!')
+    redirect_to(dworld_portfolio_path, notice: 'Logged out, Thank You.')
   end
 end
